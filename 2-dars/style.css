@@ -1,16 +1,28 @@
 h1{
     color: blue;
-    font-size: 100px;
 }
-.sarlavha{
-    font-size: 50px;
+h2{
     color: red;
 }
-.sarlavha-2{
-    font-size: 70px;
-    color: greenyellow;
+h3{
+    color: yellow;
 }
-#sarlavha-3{
-    font-size: 80px;
-    color:yellow;
+h4{
+    color: green;
+}
+h5{
+    color: hotpink;
+}
+h6{
+    color: indigo;
+}
+
+table{
+    border-collapse: collapse;
+    width: 500px;
+    height: 200px;
+    text-align: center;
+}
+body{
+    background-color: rgb(192, 242, 255);
 }

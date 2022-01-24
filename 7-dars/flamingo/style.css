@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+[class*='card-']{
+    width: 20%;
+    height: 70%;
+    padding: 40px 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: -5px 0px 5px 5px rgb(207, 207, 207);
+}
+
+h1{
+    color: white;
+}
+h6{
+    color: white;
+    display: inline-block;
+    padding: 3px 5px;
+    border-radius: 6px;
+    font-weight: 550;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+p{
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+button{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease;
+    letter-spacing: 1.5px;
+}
+
+button:hover{
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.card-1{
+    background: linear-gradient(to right ,rgb(245, 245, 108),yellow);
+}
+
+.card-2{
+    background: linear-gradient(to right, rgb(67, 125, 250),rgb(0, 47, 255));
+}
+.card-3{
+    background: linear-gradient(rgb(231, 66, 93),rgb(252, 70, 25));
+}

@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    padding: 50px;
+}
+
+
+table,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 20px;
+}
+
+td:last-child{
+    width: 300px;
+}
+
+td:first-child{
+    width: 10px;
+}
+
+tr:first-child td:last-child{
+    background-color: rgb(6, 201, 201);
+}
+
+tr td:first-child{
+    background-color: rgb(197, 118, 118);
+}
+
+tr:first-child td:first-child{
+    background-color: rgb(151, 76, 101);
+}

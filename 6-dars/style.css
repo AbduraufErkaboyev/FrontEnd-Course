@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+
+[class*='box-']{
+    width: 600px;
+    height: 200px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
+body{
+    background-image: url(IMG/Vue.png);
+    background-repeat: no-repeat;
+    background-position: 80% 20%;
+    background-attachment: fixed;
+}
+
+
+
+.box-1{
+    background-image: url(IMG/img.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+}
+
+.box-2{
+    background-image: url(IMG/img.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.box-3{
+    background-image: url(IMG/img.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+.box-4{
+    background-image: url(IMG/img.jpg);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: right top;
+}
+.box-5{
+    background: linear-gradient( to right, yellow , red , green);
+}
+
+.box-6{
+    background: url(IMG/React.png) no-repeat bottom left ,
+    url(IMG/Vue.png) no-repeat top right ,
+    linear-gradient(to right,yellow,green, red);
+}

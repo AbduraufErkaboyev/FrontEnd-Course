@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&family=Montserrat:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: url(./img/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 300px;
+    height: 420px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.profil {
+    text-align: center;
+}
+
+.profil img {
+    border-radius: 50%;
+}
+
+form .names input{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(226, 226, 226);
+    width: 100%;
+    height: 30px;
+    transition: all .3s ease;
+    padding: 0 10px;
+    margin: 5px 0;
+}
+form .names input:hover{
+    background-color: rgb(187, 186, 186);
+    transition: all .3s ease;
+}
+form .names input:focus{
+    border: none;
+    outline: none;
+}
+form button{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    transition: all .3s ease;
+    background-color: rgb(25, 142, 189);
+}
+form button:hover{
+    background-color: rgb(25, 189, 189);
+    transition: all .3s ease;
+    transform: scale(1.05);
+}
+.forgot{
+    width: 100%;
+    text-align: center;
+}
+.forgot a{
+    color: rgb(255, 0, 149);
+    transition: all .3s ease;
+    text-decoration: none;
+}
+.forgot a:hover{
+    font-size: 17px;
+    transition: all .3s ease;
+    color: rgb(255, 0, 13);
+}

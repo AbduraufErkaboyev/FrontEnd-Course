@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+
+/* div{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    color: white;
+}
+.box-1 ~ div{
+    background-color: yellow;
+}
+
+box-1 p{
+    color: red;
+}
+
+.box-2:hover{
+    background-color: black;
+}
+
+.box-2:hover > p{
+    color: white;
+}
+
+.box-2:hover .none {
+    display: block !important;
+}
+
+
+.box-2 p:after{
+    content: "example";
+    background-color: red;
+}
+
+
+.box-2 p:before{
+    content: "example";
+    background-color: red;
+} */
+
+
+form input,button{
+    display: block;
+}
+
+input::placeholder{
+    color: red;
+    font-size: 20px;
+}
+input[type=text]{
+    background-color: blue;
+}
+
+input[type=password]{
+    background-color: aqua;
+}
+
+button:disabled{
+    background-color: tomato;
+}
