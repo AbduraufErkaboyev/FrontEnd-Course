@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 2px solid black;
+    padding: 20px;
+    display: block;
+    position: relative;
+}
+
+[class*='box-']{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.box-1{
+    position: fixed;
+    background-color: blue;
+    bottom: 110px;
+    left: 50%;
+}
+
+.box-2{
+    background-color: black;
+    bottom: 110px;
+    left: 50%;
+    position: absolute;
+}
+
+.box-3{
+    position: sticky;
+    background-color: yellow;
+    top: 100px;
+    left: 100px;
+}

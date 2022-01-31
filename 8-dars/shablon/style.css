@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 20px;
+    box-shadow: 0 4px 8px #b4b4b4;
+}
+
+
+.logo {
+    width: 200px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+
+
+nav .nav-item  {
+    padding: 0;
+    margin: 0;
+}
+
+nav .nav-item li{
+    font-size: 20px;
+    padding: 20px;
+    display: inline-block;
+    list-style-type: none!important;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu   {
+    display: none;
+    border-radius: 10px;
+    border: 1px solid gray;
+    background-color: white;
+    top: 100%;
+    right: 0;
+    position: absolute;
+    width: 200px;
+}
+
+.dropdown-item {
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    border-bottom: 2px solid #8d8d8d;
+}
+
+
+.dropdown-item:hover {
+    background-color: #17e100;
+    border: none;
+}
+
+.dropdown-item:last-child {
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.dropdown-item:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.button {
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.button:hover {
+    background-color: #17e100;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*h4 {*/
+/*    background-color: blue;*/
+
+/*}*/
+
+
+/*[class*='box-'] {*/
+/*    border: 1px solid black;*/
+/*    margin-bottom: 40px;*/
+/*}*/
+
+
+/*.box-1  h4{*/
+/*    display: block;*/
+
+/*}*/
+
+
+/*.box-2  h4{*/
+/*   display: inline-block;*/
+/*    !*color: red;*!*/
+/*    background-color: red;*/
+/*}*/
+
+
+/*.box-3  h4{*/
+/*     display: inline;*/
+/*    background-color: green;*/
+/*}*/
+
+
+/*.box-4  h4{*/
+/*    background-color: darkorange;*/
+/*    display: contents;*/
+/*}*/
+
+
+/*.box-5  h4{*/
+/*    display: none;*/
+/*}*/
+
+/*.box-6 h4 {*/
+/*    display: inline-block;*/
+/*    visibility: hidden;*/
+/*}*/

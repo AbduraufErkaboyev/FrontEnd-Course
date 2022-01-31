@@ -21,7 +21,7 @@
     flex-direction: column;
     justify-content: space-between;
     font-family: 'Montserrat', sans-serif;
-    box-shadow: -5px 0px 5px 5px rgb(207, 207, 207);
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.5);
 }
 
 h1{
@@ -63,7 +63,7 @@ button:hover{
 }
 
 .card-1{
-    background: linear-gradient(to right ,rgb(245, 245, 108),yellow);
+    background: linear-gradient(to right ,rgb(105, 245, 92),rgb(6, 214, 23));
 }
 
 .card-2{
