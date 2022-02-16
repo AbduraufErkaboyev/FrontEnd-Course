@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: url(img/Desktop\ -\ 26.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+
+.main,
+.after {
+    flex: 1;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%;
+    height: 70%;
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 15px;
+}
+
+.info h1 {
+    margin-bottom: 20px;
+}
+
+.email,
+.password {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.email input,
+.password input {
+    padding: 10px 40px 10px 40px;
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 8px;
+}
+
+.email i,
+.password i {
+    position: absolute;
+    top: 35px;
+    
+}
+
+.fa-lock,
+.fa-user {
+    left: 15px;
+}
+
+.fa-eye {
+    right: 20px;
+}
+
+
+
+.email label,
+.password label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.check {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkbox label {
+    color: grey;
+}
+
+.checkbox input:checked~label {
+    color: black;
+}
+
+.check a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.check a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.button {
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(0, 102, 255);
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+}
+
+button:last-child {
+    padding: 5px;
+    border-radius: 8px;
+    border: 2px solid rgb(211, 211, 211);
+    background-color: white;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:last-child img {
+    width: 25px;
+    margin-right: 15px;
+    color: red;
+}

@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Short+Stack&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Short Stack', cursive;
+}
+
+.container {
+    float: right;
+    width: 100vw;
+    height: 100vh;
+    transition: all .7s ease;
+}
+
+/* nav */
+.nav {
+    width: 100%;
+    height: 10%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+.nav .logo {
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+/* dropdown */
+.dropdown{
+    position: relative;
+}
+.dropdown a{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+.dropdown ul{
+    z-index: 9999;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 5px;
+    top: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .5);
+    display: none;
+
+}
+.dropdown ul li{
+    padding: 15px 20px;
+}
+.dropdown ul li:hover{
+    background-color: grey;
+}
+.dropdown ul li:first-child{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.dropdown ul li:last-child{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.open_2.dropdown-menu{
+    display: block;
+}
+
+
+
+
+/* main */
+.main {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    position: relative;
+}
+
+.menu {
+    z-index: 9999;
+    position: absolute;
+    width: 15%;
+    height: 100%;
+    background-color: rgb(32, 31, 31);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -15%;
+    transition: all .7s ease;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu ul li {
+    list-style: none;
+    color: white;
+    padding: 20px 0;
+    font-size: 25px;
+}
+.menu ul li:hover{
+    color: aqua;
+}
+
+.icons {
+    position: absolute;
+    left: 255px;
+    top: 3.4%;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.menu.open ~ .container {
+    width: 85%;
+}
+
+.icons i {
+    position: absolute;
+}
+
+.icons i:last-child {
+    display: none;
+}
+
+.open i:first-child {
+    display: none;
+}
+
+.open i:last-child {
+    display: block;
+    left: 255px;
+}
+
+.open .icons {
+    left: 10px;
+}
+
+
+.open.menu {
+    left: 0;
+}
+
+
+/* blog */
+.blog {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card a{
+    position: relative;
+    width: 170px;
+    padding: 10px 50px;
+    border: none;
+    background-color: aqua;
+    font-size: 18px;
+}
+.card a i{
+    position: absolute;
+    margin-left: 8px;
+    transition: all .3s ease;
+}
+.card a:hover i{
+    padding-left: 15px;
+}

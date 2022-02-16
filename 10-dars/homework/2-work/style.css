@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Short+Stack&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgb(228, 215, 170) 50% ,white 50%);
+}
+
+.name_input,
+.number_input{
+    position: relative;
+}
+.name_input{
+    margin-bottom: 30px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    padding: 30px;
+    width: 350px;
+    min-height: 350px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, .5);
+}
+
+input {
+    position: absolute;
+    background: transparent;
+    padding: 10px;
+    width: 290px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.window {
+    position: absolute;
+    right: -640px;
+    top: -600px;
+    padding: 15px;
+    background-color: white;
+    border-top: 25px solid rgb(4, 201, 4);
+    transition: all 1s ease;
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, .5);
+}
+.window.open{
+    top: -385px;
+}
+.first_label {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    font-size: 18px;
+    transition: all .3s ease;
+    pointer-events: none;
+}
+
+.last_label {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    font-size: 18px;
+    transition: all .3s ease;
+    pointer-events: none;
+}
+
+#name:focus~.first_label,
+#name:valid~.first_label {
+    background-color: white;
+    padding: 0 5px;
+    transform: translateX(-5px) translateY(-20px);
+    font-size: 15px;
+}
+
+#number:focus~.last_label,
+#number:valid~.last_label {
+    background-color: white;
+    padding: 0 5px;
+    transform: translateX(-5px) translateY(-20px);
+    font-size: 15px;
+}
+
+
+
+button{
+    border: none;
+    background-color: rgb(4, 201, 4);
+    border-radius: 5px;
+    padding: 10px 0;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+button:hover{
+    background-color: rgb(5, 129, 5);
+}

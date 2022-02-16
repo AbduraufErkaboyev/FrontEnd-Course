@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Short+Stack&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Short Stack', cursive;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, rgb(255, 251, 0), rgb(255, 0, 242), rgb(0, 102, 255));
+}
+
+/* .card {
+    width: 300px;
+    min-height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 5px rgba(78, 13, 78, 0.5);
+    transition: all 3s linear;
+} */
+
+.input {
+    cursor: pointer;
+    position: relative;
+}
+
+.input-text {
+    background: transparent;
+    border: none;
+    outline: none;
+    background: linear-gradient(45deg, rgb(0, 255, 34),yellow );
+    padding: 12px 10px;
+}
+.input-text:focus,
+.input-text:valid{
+    background: transparent;
+}
+.input-label {
+    top: 12px;
+    left: 10px;
+    transition: all .3s linear;
+    position: absolute;
+    pointer-events: none;
+}
+
+.highlight {
+    position: absolute;
+    width: 0px;
+    border-bottom: 2px solid black;
+    bottom: 0;
+    transition: all .3s linear;
+    left: 0;
+}
+
+
+.input-text:focus~.input-label,
+.input-text:valid~.input-label {
+    top: -10px;
+    left: 8px;
+}
+
+.input-text:focus~.highlight ,
+.input-text:valid~.input-label{
+    border-color: rgb(255, 0, 0);
+    width: 189px;
+}
+
+.
