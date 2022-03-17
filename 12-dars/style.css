@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 2px dotted black;
+    height: 50vh;
+}
+
+
+.container::after {
+    content: 'UzAvto';
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+}
+
+.car {
+    position: absolute;
+    width: 210px;
+    height: 100px;
+    background-color: rgb(102, 148, 179);
+    bottom: 20px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    animation: anime 5s linear 1;
+    animation-fill-mode: forwards;
+}
+
+.oyna {
+    position: absolute;
+    width: 120px;
+    height: 80px;
+    background-color: black;
+    top: -10px;
+}
+
+
+.car::after,
+.car::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+    bottom: -20px;
+    animation: redline .3s linear 17;
+    box-shadow: rgba(94, 94, 94, 0.92) 9px 4px 7px 0px inset;
+}
+
+.car::after {
+    left: 20px;
+}
+
+.car::before {
+    right: 20px;
+}
+
+@keyframes anime{
+
+    0%{
+        left: 0;
+    }
+
+    25%{
+        transform: rotateZ(0)
+    }
+
+    50%{
+        transform: rotateZ(-20deg) translateY(-20px);
+    }
+    75%{
+        transform: rotateZ(0)
+    }
+
+    100%{
+        left: calc(100% - 200px);
+    }
+
+}
+
+@keyframes redline{
+
+    0%{
+        transform: rotate(0);
+    }
+
+    100%{
+        transform: rotate(1turn);
+    }
+
+}
+
+.disc::after , .disc::before{
+    content: '+';
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    color: black;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    position: absolute;
+    bottom: -12.5px;
+    border-radius: 50%;
+    animation: disc .3s linear 17;
+}
+
+.disc::after {
+    left: 27.5px;
+    z-index: 9999;
+}
+
+.disc::before{
+    right: 27.5px;
+}
+
+@keyframes disc{
+
+    0%{
+        transform: rotate(0);
+    }
+
+    100%{
+        transform: rotate(1turn);
+    }
+
+}

@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 300px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    transition: all .3s ease;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    z-index: 9999;
+}
+.box:hover{
+    transform: rotate(80deg);
+}

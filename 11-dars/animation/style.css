@@ -1,0 +1,348 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eight {
+    width: 700px;
+    height: 700px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: relative;
+}
+
+.neptun {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: grey;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: neptun 9s linear infinite;
+    box-shadow: rgba(68, 6, 109, 0.92) 27px 4px 37px 0px inset;
+}
+
+@keyframes neptun {
+
+    to {
+        transform: rotate(0) translateX(350px);
+    }
+
+    from {
+        transform: rotate(1turn) translateX(350px);
+    }
+
+}
+
+.seven {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 620px;
+    height: 620px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.uran {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: grey;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: uran 8s linear infinite;
+    box-shadow: rgba(85, 28, 28, 0.92) 27px 4px 37px 0px inset;
+}
+
+@keyframes uran {
+
+    to {
+        transform: rotate(0) translateX(310px);
+    }
+
+    from {
+        transform: rotate(1turn) translateX(310px);
+    }
+
+}
+
+.six {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 540px;
+    height: 540px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.saturn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: grey;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: saturn 7s linear infinite;
+    box-shadow: rgba(172, 54, 0, 0.92) 27px 4px 37px 0px inset;
+    outline: 2px solid red;
+    outline-offset: 5px;
+}
+
+@keyframes saturn {
+
+    to {
+        transform: rotate(0) translateX(270px);
+    }
+
+    from {
+        transform: rotate(1turn) translateX(270px);
+    }
+    
+
+}
+
+
+.five{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 460px;
+    height: 460px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.yupiter{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: grey;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: yupiter 6s linear infinite;
+    box-shadow: rgba(60, 73, 109, 0.92) 27px 4px 37px 0px inset;
+}
+@keyframes yupiter {
+
+    to {
+        transform: rotate(0) translateX(230px);
+    }
+
+    from {
+        transform: rotate(1turn) translateX(230px);
+    }
+    
+
+}
+
+
+.four{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.mars{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: grey;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: mars 5s linear infinite;
+    box-shadow: rgba(121, 129, 0, 0.92) 27px 4px 37px 0px inset;
+}
+@keyframes mars {
+
+    to {
+        transform: rotate(0) translateX(190px);
+    }
+
+    from {
+        transform: rotate(1turn) translateX(190px);
+    }
+    
+
+}
+
+
+
+.three{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.earth{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: grey;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: earth 4s linear infinite;
+    box-shadow: rgba(0, 60, 226, 0.92) 27px 4px 37px 0px inset;
+}
+@keyframes earth {
+
+    to {
+        transform: rotate(0) translateX(150px);
+    }
+
+    from {
+        transform: rotate(1turn) translateX(150px);
+    }
+    
+
+}
+
+
+
+.two{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.venera{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: grey;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: venera 3s linear infinite;
+    box-shadow: rgba(9, 97, 1, 0.92) 27px 4px 37px 0px inset;
+}
+@keyframes venera {
+
+    to {
+        transform: rotate(0) translateX(110px);
+    }
+
+    from {
+        transform: rotate(1turn) translateX(110px);
+    }
+    
+
+}
+
+
+.one{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 1px solid ;
+}
+.merkuriy{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: grey;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: merkuriy 2s linear infinite;
+    box-shadow: rgba(194, 0, 152, 0.92) 27px 4px 37px 0px inset;
+}
+@keyframesblack merkuriy {
+
+    to {
+        transform: rotate(0) translateX(70px);
+    }
+
+    from {
+        transform: rotate(1turn) translateX(70px);
+    }
+    
+
+}
+
+
+.quyosh{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(251, 255, 0);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: grey 17px 4px 30px 0px inset;
+
+}

@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+
+$btn-blue: blue;
+$btn-red: red;
+$btn-green: green;
+
+
+.btn{
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+
+    &-red{
+        background-color: $btn-red;
+
+        &:hover{
+            background-color: rgb(104, 50, 0);
+        }
+        &:focus{
+            background-color: rgb(37, 241, 180);
+        }
+    }
+
+    &-blue{
+        background-color: $btn-blue;
+
+        &:hover{
+            background-color: crimson;
+        }
+        &:focus{
+            background-color: darkmagenta;
+        }
+    }
+
+    &-green{
+        background-color: $btn-green;
+
+        &:hover{
+            background-color: rgb(25, 0, 255);
+        }
+        &:focus{
+            background-color: darkmagenta;
+        }
+    }
+}
