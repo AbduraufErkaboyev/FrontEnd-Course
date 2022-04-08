@@ -30,4 +30,4 @@ let yosh = prompt("Yoshingizni kiriting:")
 let manzil = prompt("Manzilingizni kiriting:")
 let uqish = prompt("Qayerda o'qiysiz ?")
 
-console.log(`${familiya} ${ism}  ${yosh}da. U ${manzil}da yashaydi. ${uqish}da o'qiydi.`)
+console.log(`Ism: ${ism} \nFamiliya: ${familiya} \nYoshi: ${yosh} \nManzili: ${manzil} \nO'qish joyi: ${uqish}`)
