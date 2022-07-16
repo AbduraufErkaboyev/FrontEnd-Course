@@ -1,0 +1,37 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.property1 {
+  font-size: 3rem;
+  color: rgb(189, 22, 22);
+  text-shadow: 5px 5px 5px rgb(255, 0, 0);
+  transform: rotate(360deg);
+  transition: 500ms;
+}
+
+.property2 {
+  font-size: 3rem;
+  color: rgb(76, 195, 20);
+  text-shadow: 5px 5px 5px rgb(72, 255, 0);
+  transform: rotate(360deg);
+  transition: 500ms;
+}
+
+.property3 {
+  font-size: 3rem;
+  color: rgb(22, 33, 189);
+  text-shadow: 5px 5px 5px rgb(0, 17, 255);
+  transform: rotate(360deg);
+  transition: 500ms;
+}
